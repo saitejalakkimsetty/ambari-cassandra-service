@@ -6,7 +6,7 @@
             <name>Cassandra</name>
             <displayName>Cassandra</displayName>
             <comment>Distributed database</comment>
-            <version>2.1</version>
+            <version>5.0.3</version>
             <components>
                <component>
                     <name>Cluster-Hosts</name>
@@ -36,7 +36,7 @@
                     <osFamily>any</osFamily>
                     <packages>
                         <package>
-                            <name>dsc21</name>
+                            <name>dse-full</name>
                         </package>
                         <package>
                             <name>opscenter</name>
