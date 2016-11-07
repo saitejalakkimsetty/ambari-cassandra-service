@@ -37,7 +37,7 @@ class Cassandra_Master(Script):
         import params
         env.set_params(params)
         stop_cmd = format("service dse stop")
-        start_opscenter = format("service opscenterd stop")
+        #start_opscenter = format("service opscenterd stop")
         Execute(stop_cmd)
         print 'Stop the Master'
     def start(self, env):
@@ -45,7 +45,7 @@ class Cassandra_Master(Script):
         env.set_params(params)
         self.configure(env)
         start_cmd = format("service dse start")
-        start_opscenter = format("service opscenterd start")
+        #start_opscenter = format("service opscenterd start")
         Execute(start_cmd)
         Execute(start_opscenter)
         print 'Start the Master'
