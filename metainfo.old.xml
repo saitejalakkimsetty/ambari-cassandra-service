@@ -38,6 +38,9 @@
                         <package>
                             <name>dse-full</name>
                         </package>
+                        <package>
+                            <name>opscenter</name>
+                        </package>
                     </packages>
                 </osSpecific>
             </osSpecifics>
