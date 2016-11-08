@@ -36,7 +36,10 @@
                     <osFamily>any</osFamily>
                     <packages>
                         <package>
-                            <name>dse-full</name>
+                            <name>dsc30</name>
+                        </package>
+                        <package>
+                            <name>cassandra30-tools</name>
                         </package>
                     </packages>
                 </osSpecific>
