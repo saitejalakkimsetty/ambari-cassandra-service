@@ -15,7 +15,7 @@ limitations under the License.
 
 from __future__ import print_function
 from resource_management import *
-import  sys,subprocess,os
+import sys,subprocess,os
 import requests
 import time
 

@@ -28,11 +28,6 @@ class Cassandra_Master(Script):
         env.set_params(params)
         print 'Install'
         self.install_packages(env)
-    def configure(self, env):
-        import params
-        env.set_params(params)
-        print 'Install plugins';
-        cassandra()
     def stop(self, env):
         import params
         env.set_params(params)
@@ -43,11 +38,11 @@ class Cassandra_Master(Script):
     def start(self, env):
         import params
         env.set_params(params)
-        self.configure(env)
+        #self.configure(env)
         start_cmd = format("service dse start")
         #start_opscenter = format("service opscenterd start")
         Execute(start_cmd)
-        Execute(start_opscenter)
+        #Execute(start_opscenter)
         print 'Start the Master'
     def status(self, env):
         import params
@@ -55,6 +50,11 @@ class Cassandra_Master(Script):
         status_cmd = format("service dse status")
         Execute(status_cmd)
         print 'Status of the Master'
+    def configure(self, env):
+        import params
+        env.set_params(params)
+        print 'Install plugins';
+        cassandra()
     
 if __name__ == "__main__":
     Cassandra_Master().execute()

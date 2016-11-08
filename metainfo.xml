@@ -50,7 +50,6 @@
                   <config-type>cassandra-env</config-type>
             </configuration-dependencies>
             <restartRequiredAfterChange>true</restartRequiredAfterChange>
-
         </service>
     </services>
 </metainfo>
